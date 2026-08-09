@@ -1,15 +1,7 @@
 const nextConfig = {
-  reactStrictMode: true,
-
-  async rewrites() {
-    return {
-      beforeFiles: [
-        {
-          source: "/",
-          destination: "/index.html"
-        }
-      ]
-    };
+  output: "export",
+  images: {
+    unoptimized: true
   }
 };
 
